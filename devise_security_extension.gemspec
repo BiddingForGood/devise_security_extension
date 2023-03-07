@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name = "devise_security_extension".freeze
-  s.version = "0.10.1"
+  s.version = "0.10.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   end
 
   if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<railties>.freeze, [">= 3.2.6", "< 6.0"])
+    s.add_runtime_dependency(%q<railties>.freeze, [">= 5.1", "< 8"])
     s.add_runtime_dependency(%q<devise>.freeze, [">= 3.0.0", "< 5.0"])
     s.add_development_dependency(%q<bundler>.freeze, [">= 1.3.0", "< 2.0"])
     s.add_development_dependency(%q<sqlite3>.freeze, ["~> 1.3", ">= 1.3.10"])
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
     s.add_development_dependency(%q<rails_email_validator>.freeze, ["~> 0"])
     s.add_development_dependency(%q<coveralls>.freeze, ["~> 0.8"])
   else
-    s.add_dependency(%q<railties>.freeze, [">= 3.2.6", "< 6.0"])
+    s.add_dependency(%q<railties>.freeze, [">= 5.1", "< 8"])
     s.add_dependency(%q<devise>.freeze, [">= 3.0.0", "< 5.0"])
     s.add_dependency(%q<bundler>.freeze, [">= 1.3.0", "< 2.0"])
     s.add_dependency(%q<sqlite3>.freeze, ["~> 1.3", ">= 1.3.10"])
